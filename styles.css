@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f9;
+    background-color: #e033ff;
 }
 
 .container {
@@ -21,7 +21,7 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #3498db;
+    background-color: #000000;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -31,5 +31,5 @@ button {
 #cancion {
     margin-top: 20px;
     font-size: 18px;
-    color: #333;
+    color: #410b3e;
 }
