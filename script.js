@@ -10,13 +10,15 @@ function mostrarCancion() {
         { name: "Not today", artist: "BTS", link: "https://music.apple.com/ar/album/not-today/1596528839?i=1596529383" },
         { name: "Look Here", artist: "BTS", link: "https://music.apple.com/ar/album/look-here/1597016856?i=1597017528" },
         { name: "Like", artist: "BTS", link: "https://music.apple.com/ar/album/like/1596528414?i=1596528633" }
-      ];
-      
+    ];
 
     // Seleccionar una canción aleatoria
     const indiceAleatorio = Math.floor(Math.random() * canciones.length);
     const cancionSeleccionada = canciones[indiceAleatorio];
 
-    // Mostrar la canción en la página
-    document.getElementById("cancion").innerText = cancionSeleccionada;
+    // Mostrar la canción en la página con el enlace clickable
+    const cancionDisplay = document.getElementById("cancion");
+    cancionDisplay.innerHTML = `
+        <p><a href="${cancionSeleccionada.link}" target="_blank">${cancionSeleccionada.name} - ${cancionSeleccionada.artist}</a></p>
+    `;
 }
